@@ -6,6 +6,9 @@
   padding: 2rem;
   font-weight: normal;
 }
+*::selection {
+  background-color: rgb(255, 164, 53);
+}
 
 @media (hover: hover) {
   a:hover {
@@ -15,8 +18,9 @@
 
 @media (min-width: 1024px) {
   body {
+    padding-top: 70px;
+    background-color: tomato;
     display: flex;
-    /* place-items: center; */
   }
 
   #app {
