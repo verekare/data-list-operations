@@ -1,13 +1,13 @@
 <template>
     <form @submit.prevent>
         <input
-            
+            v-model="todoTitle"
             type="text"
             class="input" placeholder="a task to do"
         />
         <my-button 
         style="background: rgb(245, 245, 245);"
-        @click="addTask">Add task
+        @click="add(todoTitle)">Add task
         </my-button>
     </form>
 </template>
@@ -15,14 +15,20 @@
 import MyButton from './UI/MyButton.vue';
 import MyInput from './UI/MyInput.vue';
 
-const addTask = () => {
-// add store 
-}
+defineProps({
+    add: {
+        type: Function,
+        required: true
+    }
+})
+
 </script>
+
+
 <style lang="scss">
     form {
         margin: auto;
-        min-width: 400px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 8px;

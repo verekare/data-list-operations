@@ -1,20 +1,30 @@
 <script setup>
 import TodoItem from './TodoItem.vue'
 defineProps({
-    items: {
+    todos: {
         type: Array,
         required: true
-    }
-})
-    
-
+    },
+    remove: {
+        type: Function
+    },
+    toggle: {
+        type: Function
+    },
+    edit: {
+        type: Function
+    },
+})  
 </script>
 <template>
     <div class="items_layout">
         <TodoItem 
-            v-for="item in items"
-            :key="item.id"
-            :item="item"
+            v-for="todo in todos"
+            :key="todo.id"
+            :todo="todo"
+            :remove="remove"
+            :toggle="toggle"
+            :edit="edit"
         >
         </TodoItem>
     </div>

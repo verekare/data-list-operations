@@ -7,7 +7,6 @@
 <style>
     button {
         padding: 3px;
-        margin-left: 5px;
         border: none;
         border-radius: 20px;
         background-color: whitesmoke;
@@ -15,7 +14,7 @@
         font-family: Avenir;
         font-weight: 500;
         text-transform: uppercase;
-        position: relative;
+        /* position: relative; */
     }
     button:active {
         background-color: whitesmoke;
