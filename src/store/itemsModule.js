@@ -4,12 +4,9 @@ import { config } from '@/api/config'
 const state = {
     ids: [],
     items: [],
-    page: 1,
-    maxPage: 0,
     isLoading: false,
-    limit: 20,
+    limit: 5,
     sortOptions: [
-      {value:'title', name:'По названию'},
       {value:'completed', name:'По завершённости'}
     ],
     selectedSort: ''
@@ -21,9 +18,6 @@ const mutations = {
     },
     setIds(state, ids) {
       state.ids = ids
-    },
-    setPage(state, page) {
-      state.page = page
     },
     setIsLoading(state, bool) {
       state.isLoading = bool
@@ -42,7 +36,6 @@ const actions = {
             commit('setIsLoading', true)
             const response = await axios.get(config.url, {
               params: {
-                _page: state.page,
                 _limit: state.limit,
               }
             })
@@ -54,7 +47,6 @@ const actions = {
                 console.error(error);
               });
           } catch (e) {
-            // alert('errrrrrrr...rr')
             console.log(e)
           } finally {
             commit('setIsLoading', false)

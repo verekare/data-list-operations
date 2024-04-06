@@ -5,4 +5,5 @@ export const config = {
     headers: {
         'Content-Type': 'application/json',
     },
+    limit: 5,
 };
