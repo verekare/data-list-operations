@@ -1,0 +1,16 @@
+.myButton {
+    padding: 3px 9px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: tomato;
+    font-family: Avenir;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* position: relative; */
+    
+    &:active {
+        background-color: whitesmoke;
+        color: tomato;
+    }
+}

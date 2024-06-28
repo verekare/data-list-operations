@@ -1,0 +1,16 @@
+.myInput {
+    padding: 10px 15px;
+    border: none;
+    background-color: whitesmoke;
+    font-family: Avenir;
+    font-weight: 500;
+    color: tomato;
+}
+.myInput::placeholder {
+    color: rgb(255, 154, 136);
+    font-weight: 600;
+}
+.myInput:focus {
+    color: tomato;
+    border: none;
+}

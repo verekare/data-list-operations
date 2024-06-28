@@ -1,0 +1,20 @@
+.pageNumber_wrapper {
+    display: flex;
+    gap: 15px;
+    margin-top: 3em;
+    align-items: center;
+}
+.pageNumber {
+    cursor: pointer;
+    width: 30px;
+    color: darkorange;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 50%;
+}
+.currentPageNumber {
+    text-align: center;
+    border: 2px solid darkorange;
+    /* background-color: darkorange; */
+}

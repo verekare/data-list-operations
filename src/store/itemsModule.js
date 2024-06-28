@@ -62,6 +62,7 @@ const getters = {
 
 export const items = {
     state,
+    getters,
     mutations,
     actions,
     namespaced: true
