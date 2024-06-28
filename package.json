@@ -19,6 +19,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5",
+    "sass": "^1.77.6",
     "stylelint": "14.9.1",
     "stylelint-config-clean-order": "0.8.0",
     "stylelint-config-css-modules": "4.1.0",
